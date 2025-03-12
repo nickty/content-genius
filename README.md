@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ContentGenius: AI-Powered Content Management Platform
 
-## Getting Started
+ContentGenius is a full-stack application that demonstrates expertise in Python, Node.js, React (Next.js), AI tools, and cloud platforms. This project serves as a comprehensive showcase of modern web development and AI integration techniques.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ContentGenius is designed to help content creators and marketers generate, manage, analyze, and optimize content using AI and machine learning. The platform leverages various technologies to provide a seamless experience for users.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **AI Content Generation**: Create high-quality content with AI assistance
+- **Content Management**: Organize, edit, and publish content efficiently
+- **ML-Powered Analytics**: Gain insights into content performance
+- **Multi-Cloud Architecture**: Leverage AWS and Azure for storage and processing
+- **User Authentication**: Secure access with Firebase authentication
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technology Stack
 
-## Learn More
+### Frontend
+- **Next.js & React**: Modern frontend framework with server components
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **shadcn/ui**: High-quality UI components built on Radix UI
+- **Firebase Authentication**: User authentication with Google Sign-In
 
-To learn more about Next.js, take a look at the following resources:
+### Backend
+- **Python Flask API**: ML services and content analysis
+- **Node.js Express API**: Cloud services and file management
+- **Firebase**: Authentication and real-time database
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### AI & ML Components
+- **OpenAI Integration**: Content generation with GPT models
+- **TensorFlow/PyTorch**: Recommendation system and content analysis
+- **scikit-learn**: Topic modeling and content clustering
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Cloud Services
+- **AWS S3**: Primary storage for content and assets
+- **Azure Blob Storage**: Backup and redundancy storage
+- **Multi-Cloud Architecture**: Resilient and scalable infrastructure
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

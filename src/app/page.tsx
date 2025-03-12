@@ -1,3 +1,4 @@
+import { SiteHeader } from "@/components/site-header"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Brain, BarChart3, Cloud, Code } from "lucide-react"
@@ -5,31 +6,7 @@ import { ArrowRight, Brain, BarChart3, Cloud, Code } from "lucide-react"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="border-b">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <div className="flex items-center gap-2 font-bold text-xl">
-            <Brain className="h-6 w-6" />
-            <span>ContentGenius</span>
-          </div>
-          <nav className="hidden md:flex gap-6">
-            <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4">
-              Features
-            </Link>
-            <Link href="#technologies" className="text-sm font-medium hover:underline underline-offset-4">
-              Technologies
-            </Link>
-            <Link href="#roadmap" className="text-sm font-medium hover:underline underline-offset-4">
-              Roadmap
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <Button variant="outline" size="sm">
-              Sign In
-            </Button>
-            <Button size="sm">Get Started</Button>
-          </div>
-        </div>
-      </header>
+      <SiteHeader />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-gray-100 dark:from-gray-950 dark:to-gray-900">
           <div className="container px-4 md:px-6">
@@ -44,9 +21,11 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg">
-                  Start Building <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <Link href="/register">
+                  <Button size="lg">
+                    Start Building <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
                 <Button variant="outline" size="lg">
                   View Demo
                 </Button>
